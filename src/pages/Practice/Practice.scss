@@ -1,0 +1,40 @@
+.practice-wrapper {
+  padding: 0;
+  background-color: #ccc;
+  display: flex;
+  .practice-board-question {
+    width: 20%;
+    background-color: #fff;
+  }
+
+  .practice-content {
+    width: 60%;
+    padding: 0 20px;
+  }
+}
+
+.question-item {
+  display: none;
+  &.show {
+    display: block;
+  }
+}
+
+.board-question-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  .board-question-item {
+    width: 25%;
+    button {
+      --size-width: 30px;
+      width: var(--size-width);
+      height: var(--size-width);
+      border-radius: 50%;
+      margin-bottom: 6px;
+      &.active {
+        background-color: green;
+      }
+    }
+  }
+}
